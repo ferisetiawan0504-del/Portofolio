@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Feri Setiawan | Trainer Raja Gadai</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            red: '#D91B24',
+                            redDark: '#A61017',
+                            gold: '#F59E0B',
+                            dark: '#0F172A',
+                            card: '#1E293B',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .glass-panel {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #FFF 0%, #CBD5E1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .text-gradient-red {
+            background: linear-gradient(135deg, #EF4444 0%, #D91B24 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-red-600 selection:text-white relative min-h-screen">
+
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <a href="https://wa.me/6283145721293?text=Saya%20kemari%20ingin%20belajar" target="_blank" 
+       class="fixed bottom-6 right-6 z-50 flex items-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white px-5 py-3.5 rounded-full shadow-2xl transition-all duration-300 hover:scale-105 group border border-emerald-400/30">
+        <i class="fa-brands fa-whatsapp text-2xl animate-pulse"></i>
+        <span class="font-bold text-sm tracking-wide pr-1">Chat WhatsApp</span>
+    </a>
+
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 left-0 w-full z-40 glass-panel border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-brand-red flex items-center justify-center font-extrabold text-xl text-white shadow-lg shadow-red-900/40">
+                    FS
+                </div>
+                <div>
+                    <span class="font-bold text-lg text-white tracking-tight block leading-none">FERI SETIAWAN</span>
+                    <span class="text-xs text-red-400 font-medium tracking-wider uppercase">Trainer @ Raja Gadai</span>
+                </div>
+            </div>
+
+            <!-- Desktop Nav -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-red-400 transition-colors">Tentang Saya</a>
+                <a href="#competencies" class="hover:text-red-400 transition-colors">Kompetensi</a>
+                <a href="#modules" class="hover:text-red-400 transition-colors">Modul Pelatihan</a>
+                <a href="#evaluator" class="hover:text-red-400 transition-colors">Kalkulator SOP</a>
+                <a href="#contact" class="hover:text-red-400 transition-colors">Kontak</a>
+            </div>
+
+            <a href="https://wa.me/6283145721293?text=Saya%20kemari%20ingin%20belajar" target="_blank" class="hidden sm:flex items-center gap-2 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-500 hover:to-red-600 text-white font-semibold text-sm px-5 py-2.5 rounded-xl transition-all shadow-md shadow-red-950/50">
+                <i class="fa-brands fa-whatsapp"></i> Hubungi Trainer
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="pt-36 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto min-h-[90vh] flex flex-col justify-center">
+        <div class="grid lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-950/60 border border-red-800/40 text-red-400 text-xs font-semibold tracking-wide">
+                    <span class="w-2 h-2 rounded-full bg-red-500 animate-ping"></span>
+                    Corporate Trainer & Operations Specialist
+                </div>
+                
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
+                    Membangun SDM Unggul, Standardisasi <span class="text-gradient-red">Raja Gadai</span>.
+                </h1>
+                
+                <p class="text-slate-400 text-base sm:text-lg leading-relaxed max-w-2xl">
+                    Halo, saya **Feri Setiawan**. Berfokus pada pengembangan kapasitas staf operational, standardisasi pelayanan & grooming standar Raja Gadai, mitigasi risiko transaksi, serta penguatan mentalitas *leadership* di setiap cabang.
+                </p>
+
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="https://wa.me/6283145721293?text=Saya%20kemari%20ingin%20belajar" target="_blank" class="flex items-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold px-6 py-3.5 rounded-xl transition-all shadow-lg shadow-emerald-950/40">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>Saya Kemari Ingin Belajar</span>
+                    </a>
+                    <a href="#modules" class="flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold px-6 py-3.5 rounded-xl border border-slate-700 transition-all">
+                        <span>Lihat Modul Training</span>
+                        <i class="fa-solid fa-arrow-down text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- STATS -->
+                <div class="grid grid-cols-3 gap-4 pt-8 border-t border-slate-800/80">
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-white">500+</div>
+                        <div class="text-xs sm:text-sm text-slate-400">Staf Dilatih</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-amber-400">98%</div>
+                        <div class="text-xs sm:text-sm text-slate-400">Kepatuhan SOP</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-red-500">50+</div>
+                        <div class="text-xs sm:text-sm text-slate-400">Batch Training</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-5 relative">
+                <div class="w-full aspect-square rounded-3xl glass-panel p-8 relative overflow-hidden flex flex-col justify-between border-slate-700/50 shadow-2xl">
+                    <div class="absolute -top-24 -right-24 w-60 h-60 bg-red-600/20 rounded-full blur-3xl"></div>
+                    <div class="absolute -bottom-24 -left-24 w-60 h-60 bg-amber-600/20 rounded-full blur-3xl"></div>
+                    
+                    <div class="relative z-10 flex justify-between items-start">
+                        <i class="fa-solid fa-quote-left text-4xl text-red-500/40"></i>
+                        <span class="bg-slate-800/80 text-xs px-3 py-1 rounded-full text-slate-300 font-mono">RAJA GADAI ACADEMY</span>
+                    </div>
+
+                    <div class="relative z-10 space-y-4 my-6">
+                        <p class="text-lg text-slate-200 italic leading-relaxed">
+                            "Standardisasi pelayanan bukan sekadar aturan formalitas, melainkan pondasi utama dalam membangun kepercayaan nasabah pada jasa pegadaian."
+                        </p>
+                        <div>
+                            <h4 class="font-bold text-white">Feri Setiawan</h4>
+                            <p class="text-xs text-red-400">Operational & Service Trainer</p>
+                        </div>
+                    </div>
+
+                    <div class="relative z-10 pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
+                        <span><i class="fa-solid fa-shield-halved text-amber-400 mr-1"></i> Quality & Grooming</span>
+                        <span><i class="fa-solid fa-user-check text-emerald-400 mr-1"></i> Certified</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KOMPETENSI / SKILLS -->
+    <section id="competencies" class="py-20 bg-slate-900/50 border-y border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-red-500 mb-2">Fokus Utama</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-white">Kompetensi Training</h3>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="glass-panel p-8 rounded-2xl hover:border-red-500/50 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-red-950/80 border border-red-800/50 text-red-500 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Grooming & Professional Look</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Pengajaran standar penampilan resmi Raja Gadai, kerapihan seragam, tata krama pelayanan, dan pembawaan diri yang profesional saat berhadapan dengan nasabah.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="glass-panel p-8 rounded-2xl hover:border-amber-500/50 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-amber-950/80 border border-amber-800/50 text-amber-500 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-clipboard-check"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">SOP Transaksi & Operasional</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Pelatihan mendalam prosedur penaksiran, administrasi penerimaan/pengembalian barang jaminan, serta alur kas cabang sesuai pedoman resmi.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="glass-panel p-8 rounded-2xl hover:border-emerald-500/50 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-emerald-950/80 border border-emerald-800/50 text-emerald-500 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Service Excellence & Edukasi</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Teknik komunikasi persuasi, penanganan komplain nasabah secara efektif, dan penyampaian skema gadai secara transparan dan solutif.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EBL / EVALUATOR INTERAKTIF -->
+    <section id="evaluator" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="glass-panel p-8 sm:p-12 rounded-3xl border-slate-700/60 shadow-2xl">
+            <div class="grid lg:grid-cols-12 gap-10 items-center">
+                <div class="lg:col-span-6 space-y-4">
+                    <span class="text-xs font-bold uppercase tracking-widest text-amber-400">Interaktif Widget</span>
+                    <h3 class="text-3xl font-extrabold text-white">Simulasi Evaluasi Readiness Staf</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Uji kriteria kepatuhan standar staf cabang berdasarkan variabel Grooming, Pengetahuan SOP, dan Keterampilan Pelayanan.
+                    </p>
+                    
+                    <div class="space-y-4 pt-4">
+                        <div>
+                            <div class="flex justify-between text-xs font-semibold mb-1 text-slate-300">
+                                <span>Kerapihan & Grooming (0-100)</span>
+                                <span id="groomingVal" class="text-red-400">80</span>
+                            </div>
+                            <input type="range" id="groomingInput" min="0" max="100" value="80" class="w-full accent-red-600 h-2 bg-slate-800 rounded-lg cursor-pointer">
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-xs font-semibold mb-1 text-slate-300">
+                                <span>Pemahaman SOP & Transaksi (0-100)</span>
+                                <span id="sopVal" class="text-amber-400">85</span>
+                            </div>
+                            <input type="range" id="sopInput" min="0" max="100" value="85" class="w-full accent-amber-500 h-2 bg-slate-800 rounded-lg cursor-pointer">
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-xs font-semibold mb-1 text-slate-300">
+                                <span>Komunikasi & Service (0-100)</span>
+                                <span id="serviceVal" class="text-emerald-400">90</span>
+                            </div>
+                            <input type="range" id="serviceInput" min="0" max="100" value="90" class="w-full accent-emerald-500 h-2 bg-slate-800 rounded-lg cursor-pointer">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 flex flex-col items-center justify-center p-8 bg-slate-900/90 rounded-2xl border border-slate-800 text-center">
+                    <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Hasil Skor Evaluasi</span>
+                    <div id="totalScore" class="text-6xl font-extrabold text-white mb-2">85.0</div>
+                    <div id="statusBadge" class="px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-950 text-emerald-400 border border-emerald-800 mb-6">
+                        Siap Bertugas (Ready)
+                    </div>
+                    <p id="recommendationText" class="text-xs text-slate-400 max-w-xs leading-relaxed">
+                        Staf memenuhi kriteria standar operasional dan siap memberikan layanan terbaik di outlet Raja Gadai.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAK SECTION -->
+    <section id="contact" class="py-20 bg-slate-900/40 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Ingin Diskusi / Belajar Bersama?</h2>
+            <p class="text-slate-400 text-base max-w-xl mx-auto">
+                Silakan hubungi saya secara langsung untuk koordinasi jadwal pelatihan internal cabang, bimbingan materi operasional, maupun konsultasi SOP Raja Gadai.
+            </p>
+
+            <div class="pt-4 inline-block">
+                <a href="https://wa.me/6283145721293?text=Saya%20kemari%20ingin%20belajar" target="_blank" 
+                   class="inline-flex items-center gap-4 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-lg px-8 py-4 rounded-2xl transition-all shadow-xl shadow-emerald-950/50 hover:scale-105">
+                    <i class="fa-brands fa-whatsapp text-3xl"></i>
+                    <div class="text-left">
+                        <div class="text-xs font-normal text-emerald-100 uppercase tracking-wider">Direct WhatsApp</div>
+                        <div>+62 831-4572-1293</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-8 border-t border-slate-800/80 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>© 2026 Feri Setiawan - Trainer Raja Gadai. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // Interactive Evaluator Slider Logic
+        const groomingInput = document.getElementById('groomingInput');
+        const sopInput = document.getElementById('sopInput');
+        const serviceInput = document.getElementById('serviceInput');
+
+        const groomingVal = document.getElementById('groomingVal');
+        const sopVal = document.getElementById('sopVal');
+        const serviceVal = document.getElementById('serviceVal');
+
+        const totalScoreDisplay = document.getElementById('totalScore');
+        const statusBadge = document.getElementById('statusBadge');
+        const recommendationText = document.getElementById('recommendationText');
+
+        function calculateScore() {
+            const g = parseInt(groomingInput.value);
+            const s = parseInt(sopInput.value);
+            const v = parseInt(serviceInput.value);
+
+            groomingVal.innerText = g;
+            sopVal.innerText = s;
+            serviceVal.innerText = v;
+
+            // Bobot: Grooming 30%, SOP 40%, Service 30%
+            const total = ((g * 0.3) + (s * 0.4) + (v * 0.3)).toFixed(1);
+            totalScoreDisplay.innerText = total;
+
+            if (total >= 85) {
+                statusBadge.className = "px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-950 text-emerald-400 border border-emerald-800 mb-6";
+                statusBadge.innerText = "Siap Bertugas (Ready)";
+                recommendationText.innerText = "Staf memenuhi kriteria standar operasional dan siap memberikan layanan terbaik di outlet Raja Gadai.";
+            } else if (total >= 70) {
+                statusBadge.className = "px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-amber-950 text-amber-400 border border-amber-800 mb-6";
+                statusBadge.innerText = "Perlu Mentoring Singkat";
+                recommendationText.innerText = "Staf memerlukan refreshing materi pada area skor yang masih di bawah 80 sebelum dilepas mandiri.";
+            } else {
+                statusBadge.className = "px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-red-950 text-red-400 border border-red-800 mb-6";
+                statusBadge.innerText = "Wajib Retraining";
+                recommendationText.innerText = "Staf direkomendasikan mengikuti ulang modul training dasar di Raja Gadai Academy.";
+            }
+        }
+
+        groomingInput.addEventListener('input', calculateScore);
+        sopInput.addEventListener('input', calculateScore);
+        serviceInput.addEventListener('input', calculateScore);
+
+        // Initial Calculation
+        calculateScore();
+    </script>
+</body>
+</html>
